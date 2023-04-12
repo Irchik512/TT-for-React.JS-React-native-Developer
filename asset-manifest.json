@@ -1,13 +1,19 @@
 {
   "files": {
-    "main.css": "/react-homework-template/static/css/main.7acaea2f.css",
-    "main.js": "/react-homework-template/static/js/main.07d3183d.js",
-    "index.html": "/react-homework-template/index.html",
-    "main.7acaea2f.css.map": "/react-homework-template/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/react-homework-template/static/js/main.07d3183d.js.map"
+    "main.js": "/TT-for-React.JS-React-native-Developer/static/js/main.1d1faacc.js",
+    "static/js/213.48d8b4a9.chunk.js": "/TT-for-React.JS-React-native-Developer/static/js/213.48d8b4a9.chunk.js",
+    "static/js/335.e31e1eed.chunk.js": "/TT-for-React.JS-React-native-Developer/static/js/335.e31e1eed.chunk.js",
+    "static/js/566.d3e2e1c6.chunk.js": "/TT-for-React.JS-React-native-Developer/static/js/566.d3e2e1c6.chunk.js",
+    "static/js/767.1189fdb1.chunk.js": "/TT-for-React.JS-React-native-Developer/static/js/767.1189fdb1.chunk.js",
+    "static/js/881.f7059867.chunk.js": "/TT-for-React.JS-React-native-Developer/static/js/881.f7059867.chunk.js",
+    "index.html": "/TT-for-React.JS-React-native-Developer/index.html",
+    "main.1d1faacc.js.map": "/TT-for-React.JS-React-native-Developer/static/js/main.1d1faacc.js.map",
+    "213.48d8b4a9.chunk.js.map": "/TT-for-React.JS-React-native-Developer/static/js/213.48d8b4a9.chunk.js.map",
+    "335.e31e1eed.chunk.js.map": "/TT-for-React.JS-React-native-Developer/static/js/335.e31e1eed.chunk.js.map",
+    "566.d3e2e1c6.chunk.js.map": "/TT-for-React.JS-React-native-Developer/static/js/566.d3e2e1c6.chunk.js.map",
+    "881.f7059867.chunk.js.map": "/TT-for-React.JS-React-native-Developer/static/js/881.f7059867.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/js/main.1d1faacc.js"
   ]
 }
