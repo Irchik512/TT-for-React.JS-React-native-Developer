@@ -1,5 +1,4 @@
 export const chooseRandomWords = (dictionary, numWords) => {
-    console.log(dictionary);
   return Object.values(dictionary).reduce((selectedWords, word) => {
       // Generate a random number between 0 and the number of words we've selected so far
       const randomIndex = Math.floor(Math.random() * (selectedWords.length + 1));
@@ -13,7 +12,6 @@ export const chooseRandomWords = (dictionary, numWords) => {
           selectedWords.pop();
         }
       }
-  
       return selectedWords;
     }, []);
   };

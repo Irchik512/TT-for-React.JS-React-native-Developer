@@ -7,12 +7,12 @@ export const dictionarySlice = createSlice({
     addToDictionary(state, action) {
       state.push(action.payload);
     },
-    // removeFromDictionary(state, action) {
-    //   const index = state.findIndex(item => item.id === action.payload);
-    //   state.splice(index, 1);
-    // },
+    removeFromDictionary(state, action) {
+      const index = state.findIndex(item => item.id === action.payload);
+      state.splice(index, 1);
+    },
   },
 });
 
-export const { addToDictionary } = dictionarySlice.actions;
+export const { addToDictionary, removeFromDictionary } = dictionarySlice.actions;
 export const dictionaryReduser = dictionarySlice.reducer;

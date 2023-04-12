@@ -5,14 +5,13 @@ import { selectDictionary } from 'redux/selectors';
 
 export default function List() {
   const dictionaryList = useSelector(selectDictionary);
-  console.log(dictionaryList);
   return (
     <WordsList>
      {dictionaryList.map(word => (
       <Word key={word.id} >
-        <DictionaryItem wordToLearn= {word.wordToLearn} translation = {word.translation}/>
+        <DictionaryItem wordToLearn= {word.wordToLearn} translation = {word.translation} />
       </Word>
       ))}
     </WordsList>
   );
-}
+};

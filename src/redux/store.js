@@ -1,6 +1,7 @@
 import { dictionaryReduser} from 'redux/dictionarySlice';
 import { currentTestReduser } from 'redux/curentTestSlice';
-import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import { historyReduser } from 'redux/historyOfTestSlise';
+import { combineReducers, configureStore} from '@reduxjs/toolkit';
 import {
   persistStore,
   persistReducer,
@@ -16,13 +17,13 @@ import storage from 'redux-persist/lib/storage';
 const rootReducer = combineReducers({
   dictinary: dictionaryReduser, 
   currentTest: currentTestReduser, 
-  // testHistory: [],
+  testHistory: historyReduser,
 });
 
 const persistConfig = {
   key: 'root',
   storage: storage,
-  whitelist: ['dictinary'],
+  whitelist: ['dictinary', ],
 };
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 

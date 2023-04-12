@@ -11,7 +11,18 @@ export const selectRandomWords = createSelector(
   [selectDictionary],
   (dictinary,) => {
     const WORDSLENGTH = 10;
-    return chooseRandomWords(dictinary, WORDSLENGTH);
-   
+    const randomList =  chooseRandomWords(dictinary, WORDSLENGTH);
+    const randomLearnList =  randomList.map((obj)=>{
+    const answers = chooseRandomWords(randomList, 3).map((item)=> {
+      const answersVariant = {    
+        [item.translation]: false
+      }
+      return answersVariant
+    });
+    answers.push({[obj.translation]: true});
+    const newObj = {...obj, answers, };
+  return newObj
+})
+   return randomLearnList
   }
 );
