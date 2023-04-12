@@ -1,18 +1,21 @@
-import { Word } from 'components/ListItems/DictionaryItem.styled';
 import { Button } from 'components/AddForm/AddForm.styled';
 // import { useDispatch } from 'react-redux';
 
-export default function DictionaryItem({ word, translation, id }) {
+export default function DictionaryItem({wordToLearn, translation}) {
 //   const dispatch = useDispatch();
   return (
-    <Word>
-      <p>
-        {word}: {translation}
-      </p>
+    <div>
+        <p>
+          {wordToLearn}
+        </p>
+        <p>
+          {translation}
+        </p>
       <Button type="button" >
         Delete
       </Button>
-    </Word>
+  
+    </div>
   );
 }
 
