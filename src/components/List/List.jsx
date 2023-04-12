@@ -5,6 +5,7 @@ import { selectDictionary } from 'redux/selectors';
 
 export default function List() {
   const dictionaryList = useSelector(selectDictionary);
+  console.log(dictionaryList);
   return (
     <WordsList>
      {dictionaryList.map(word => (
