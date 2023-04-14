@@ -1,5 +1,5 @@
 
-export default function Notification({ children }) {
-  return <p>{children}</p>;
+export default function Notification({ message }) {
+  return <p>{message}</p>;
 }
 

@@ -34,7 +34,6 @@ export default function AddtForm() {
       translation,
      };
     dispatch(addToDictionary(newWordObject));
-    console.log(newWordObject);
     setNewWord('');
     setTranslation('');
   };

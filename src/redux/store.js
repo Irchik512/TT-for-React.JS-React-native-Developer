@@ -23,7 +23,7 @@ const rootReducer = combineReducers({
 const persistConfig = {
   key: 'root',
   storage: storage,
-  whitelist: ['dictinary', ],
+  blackList: ['testHistory', ],
 };
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
